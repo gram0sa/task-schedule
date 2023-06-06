@@ -53,6 +53,7 @@ document.addEventListener("click", (e) => {
 
   if (el.classList.contains("apagar")) {
     el.parentElement.remove();
+    alert('Deseja realmente apagar permanentemente essa tarefa?');
   }
   salvarTarefa();
 });
