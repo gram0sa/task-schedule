@@ -29,6 +29,7 @@ function criaTarefa(textoInput) {
   tarefa.appendChild(li);
   limpaInput();
   btnApagaTarefa(li);
+  salvarTarefa();
 }
 
 //funcao para limpar o input
@@ -46,3 +47,15 @@ function btnApagaTarefa(li) {
     li.appendChild(btnApagar);
 }
 
+document.addEventListener("click", (e) => {
+  const el = e.target;
+
+  if(el.classList.contains('apagar')) {
+    el.parentElement.remove();
+  }
+});
+
+function salvarTarefa() {
+  const liTarefas = tarefa.querySelectorAll('li');
+  console.log(liTarefas); 
+}
