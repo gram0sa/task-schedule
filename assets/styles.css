@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color: rgb(48, 48, 48);
+  --primary-color-darker: rgb(48, 48, 48);
 }
 
 * {
   box-sizing: border-box;
   outline: 0;
 }
+
+header{
+  text-align: center;
+  color: rgb(239, 235, 228);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section p{
+  text-align: center;
+} 
 
 body {
   margin: 0;
@@ -24,6 +34,28 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  background-color: rgb(239, 235, 228);
+}
+
+.input-nova-tarefa{
+  background-color: rgb(239, 235, 228);
+}
+
+.btn-tarefa {
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: rgb(48, 48, 48);
+  color:rgb(239, 235, 228);
+  border: 10px;
+  width: 130px; 
+  height: 23px;
+}
+
+.btn-tarefa:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.3s;
+  background-color: #285201;
 }
 
 form input, form label, form button {
@@ -56,3 +88,28 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+
+li {
+  display:flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.apagar {
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: rgb(48, 48, 48);
+  color:rgb(239, 235, 228);
+  border: 10px;
+  width: 100px; 
+  height: 23px; 
+}
+
+
+.apagar:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #fa0404;
+}
+
